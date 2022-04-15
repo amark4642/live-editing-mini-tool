@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import '../styles/App.css';
-// import { Preview } from './Preview';
+import Preview from './Preview';
 const App = () => {
 
   const [contentInput, setContentInput] = useState("hello newton");
@@ -36,14 +36,14 @@ const App = () => {
   )
 }
 
-function Preview(props) {
-  console.log("test "+ props.content);
-  return (
-    <div style={{ fontSize: `${props.fontSize}`, padding: `${props.padding}`}}>
-      {props.content}
-    </div>
-  )
-}
+// function Preview(props) {
+//   console.log("test "+ props.content);
+//   return (
+//     <div style={{ fontSize: `${props.fontSize}`, padding: `${props.padding}`}}>
+//       {props.content}
+//     </div>
+//   )
+// }
 
 
 export default App;
